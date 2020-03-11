@@ -14,10 +14,28 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-overlayscrollbars": [
+        "dist/ngx-overlayscrollbars/ngx-overlayscrollbars",
+        "dist/ngx-overlayscrollbars"
+      ],
+      "my-lib-void": [
+        "dist/my-lib-void/my-lib-void",
+        "dist/my-lib-void"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "paths": {
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ],
+      "overlayscrollbars": [
+        "./node_modules/overlayscrollbars"
+      ]
+    }
   }
 }
